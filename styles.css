@@ -18,6 +18,22 @@ a {
     cursor: pointer;
 }
 
+
+h1 {
+    color: #1a202c;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0px;
+}
+
+p {
+    color: #243e63;
+    font-size: 16px;
+    margin: 20px 0px;
+}
+
+
 .link__hover-effect:hover {
     color: #6415ff;
 }
@@ -41,6 +57,10 @@ a {
     left: 0;
 }
 
+.purple {
+    color: #6415ff;
+}
+
 li {
     list-style: none;
 }
@@ -50,6 +70,23 @@ li {
     max-width: 12000px;
     margin: 0 auto;
 }
+
+
+.btn {
+    background-color: #6415ff;
+    padding: 18px 48px;
+    border-radius: 50px;
+    color: #f7fafc;
+    transition: all 300ms ease;
+    color: rgb(247, 250, 252);
+    cursor: pointer;
+    border-style: solid;
+    border-color: rgb(226, 232, 240);
+    text-size-adjust: 100%;
+    tab-size: 4;
+}
+
+.btn
 
 /*
 
@@ -183,6 +220,99 @@ nav {
     padding: 8;
     color: #243E63;
 }
+
+
+/* 
+
+HEADER
+
+*/
+
+.header__container {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;  
+    padding: 96px;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.header__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 407px;
+    position: relative;
+}
+
+.header__img--logo {
+    width: 100%;
+}
+.header__img {
+    width: 100%;
+    max-width: 512px;
+    justify-content: flex-end;
+}
+
+.trusted__logo {
+    color: #a0aec0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    border-radius: 9999px;
+    border-width: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    font-stretch: 100%;
+    color: ;
+    cursor: text;
+    display: inline-block;
+    line-height: 24px;
+    padding-block-start: 16px;
+    padding-block-end: 16px;
+    padding: 16px 0px 16px 32px;
+    padding-inline-start: 32px;
+    tab-size: 4;
+    text-size-adjust: 100%;
+    text-shadow: none;
+    writing-mode: horizontal-tb;
+    border-color: rgb(226, 232,240);
+    border-style: solid;
+}
+
+::placeholder {
+    color: rgb(226, 232,240);
+}
+
+
+/* 
+
+SERVICES
+
+*/
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.service {
+    width: 30%;
+    margin: 0px 16px;
+    padding: 32px 8px;
+}
+
+.service__img {
+    padding: 20px;
+}
+
+
+
+
 
 @media (max-width: 550px) {
     .nav__list--links {
