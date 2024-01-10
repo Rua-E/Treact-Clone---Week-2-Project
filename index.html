@@ -5,63 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
   </head>
   <body>
-    <section id="">
-      <div class="row">
-        <nav>
-          <div class="logo__container">
-            <img
-              class="logo"
-              src="https://treact.owaiskhan.me/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg"
-              alt=""
-            />
-            <div class="company__name">Treact</div>
-          </div>
+    <section id="navigation__bar" class="nav__container">
+        <nav class="nav">
+          <a class="nav__logo" href="">
+            <figure class="nav__logo--img--wapper">
+              <img
+                class="logo"
+                src="https://treact.owaiskhan.me/static/media/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+                alt=""
+              />
+            </figure>
+            <h2 class="nav__logo--title">Treact</h2>
+          </a>
           <ul class="nav__list--links">
             <li class="nav__link">
-              <a
-                href="#about"
-                class="nav__link--anchor link__hover-effect link__hover-effect--purple"
-                >About</a
-              >
+              <a href="#about" class="nav__link--anchor">About</a>
             </li>
             <li class="nav__link">
-              <a
-                href="#blog"
-                class="nav__link--anchor link__hover-effect link__hover-effect--purple"
-                >Blog</a
-              >
+              <a href="#blog" class="nav__link--anchor">Blog</a>
             </li>
             <li class="nav__link">
-              <a
-                href="#pricing"
-                class="nav__link--anchor link__hover-effect link__hover-effect--purple"
-                >Pricing</a
-              >
+              <a href="#pricing" class="nav__link--anchor">Pricing</a>
             </li>
             <li class="nav__link">
-              <a
-                href="#contact-us"
-                class="nav__link--anchor link__hover-effect link__hover-effect--purple"
-                >Contact Us</a
-              >
+              <a href="#contact-us" class="nav__link--anchor">Contact Us</a>
             </li>
             <li class="nav__link">
-              <a
-                href="#login"
-                class="nav__link--anchor link__hover-effect link__hover-effect--purple"
-                >Login</a
-              >
+              <a href="#login" class="nav__link--anchor">Login</a>
             </li>
             <li class="nav__link">
-              <a
-                href="#sign-up"
-                class="nav__link--anchor nav__link--anchor--primary"
-                >Sign Up</a
-              >
+              <a href="#sign-up" class="button">Sign Up</a>
             </li>
           </ul>
           <button class="btn__menu" onclick="openMenu()">
@@ -69,13 +49,13 @@
           </button>
           <div class="menu__backdrop">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-              <i class="fas fa-times"></i>
+              X
             </button>
             <ul class="menu__links">
               <li class="menu__list">
                 <a
                   href="#"
-                  class="menu__link nav__link--anchor link__hover-effect link__hover-effect--purple"
+                  class="menu__link nav__link--anchor"
                   onclick="closeMenu()"
                   >About</a
                 >
@@ -83,7 +63,7 @@
               <li class="menu__list">
                 <a
                   href="#"
-                  class="menu__link nav__link--anchor link__hover-effect link__hover-effect--purple"
+                  class="menu__link nav__link--anchor"
                   onclick="closeMenu()"
                   >Blog</a
                 >
@@ -91,7 +71,7 @@
               <li class="menu__list">
                 <a
                   href="#"
-                  class="menu__link nav__link--anchor link__hover-effect link__hover-effect--purple"
+                  class="menu__link nav__link--anchor"
                   onclick="closeMenu()"
                   >Pricing</a
                 >
@@ -99,7 +79,7 @@
               <li class="menu__list">
                 <a
                   href="#"
-                  class="menu__link nav__link--anchor link__hover-effect link__hover-effect--purple"
+                  class="menu__link nav__link--anchor"
                   onclick="closeMenu()"
                   >Contact US</a
                 >
@@ -107,7 +87,7 @@
               <li class="menu__list">
                 <a
                   href="#"
-                  class="menu__link nav__link--anchor link__hover-effect link__hover-effect--purple"
+                  class="menu__link nav__link--anchor"
                   onclick="closeMenu()"
                   >Login</a
                 >
@@ -115,7 +95,7 @@
               <li class="menu__list">
                 <a
                   href="#"
-                  class="menu__link--primary nav__link--anchor nav__link--anchor--primary"
+                  class="menu__link--primary button"
                   onclick="closeMenu()"
                   >Sign Up</a
                 >
@@ -123,76 +103,124 @@
             </ul>
           </div>
         </nav>
-      </div>
       <header>
-        <div class="header__container">
-            <div class="header__description">
-                <h1>Beautiful React Templates <span class="purple"> for you</span></h1>
-                <p>Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-                <input type="email" placeholder="Your E-mail Address">
-                    <button class="btn">Get Started</button>
-                <div class="header__logo--wrapper">
-                    <p class="trusted__logo"> OUT TRUSTED CUSTOMERS</p>
-                    <img class="header__img--logo" src="https://treact.owaiskhan.me/static/media/customers-logo-strip.680ac7c2e8ae28161d2c.png" alt="">
-                </div>
+        <div class="row header__container">
+          <div class="header__description">
+            <h1>
+              Beautiful React Templates <span class="purple"> for you</span>
+            </h1>
+            <p>
+              Our templates are easy to setup, understand and customize. Fully
+              modular components with a variety of pages and components.
+            </p>
+            <input type="email" placeholder="Your E-mail Address" />
+            <button class="btn">Get Started</button>
+            <div class="header__logo--wrapper">
+              <p class="trusted__logo">OUT TRUSTED CUSTOMERS</p>
+              <img
+                class="header__img--logo"
+                src="https://treact.owaiskhan.me/static/media/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+                alt=""
+              />
             </div>
-            <img class="header__img" src="https://treact.owaiskhan.me/static/media/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" alt="">
+          </div>
+          <img
+            class="header__img"
+            src="https://treact.owaiskhan.me/static/media/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+            alt=""
+          />
         </div>
-    </header>
+      </header>
     </section>
     <section class="#features">
-        <h2>
-            We have Amazing Service.
-        </h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore voluptatum animi, itaque nostrum ducimus quia nisi magnam praesentium aliquid!
-        </p>
-        <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="section__title">
+            <h2>We have Amazing Service.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              labore voluptatum animi, itaque nostrum ducimus quia nisi magnam
+              praesentium aliquid!
+            </p>
+          </div>
+          <div class="services">
             <ul class="services__list">
-                <li class="service">
-                    <img class="service__img" src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
-                    <span> Secure</span>
-                    <p class="service__description">
-                        We strictly only deal with vendors that provide top notch security.
-                    </p>
-                </li>
-                <li class="service">
-                    <img class="service__img" src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
-                    <span> 24/7 Support</span>
-                    <p class="service__description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga cumque eos temporibus dolore.
-                    </p>
-                </li>
-                <li class="service">
-                    <img class="service__img" src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
-                    <span> Customizable</span>
-                    <p class="service__description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex aspernatur expedita deserunt ab.
-                    </p>
-                </li>
-                <li class="service">
-                    <img class="service__img" src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
-                    <span> Reliable</span>
-                    <p class="service__description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias laudantium hic laboriosam aperiam.
-                    </p>
-                </li>
-                <li class="service">
-                    <img class="service__img" src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
-                    <span> Fast</span>
-                    <p class="service__description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos officiis qui fugiat?
-                    </p>
-                </li>
-                <li class="service">
-                    <img class="service__img" src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
-                    <span> Easy</span>
-                    <p class="service__description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A molestias laboriosam blanditiis itaque.
-                    </p>
-                </li>
+              <li class="service">
+                <img
+                  class="service__img"
+                  src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                  alt=""
+                />
+                <span> Secure</span>
+                <p class="service__description">
+                  We strictly only deal with vendors that provide top notch
+                  security.
+                </p>
+              </li>
+              <li class="service">
+                <img
+                  class="service__img"
+                  src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                  alt=""
+                />
+                <span> 24/7 Support</span>
+                <p class="service__description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga
+                  cumque eos temporibus dolore.
+                </p>
+              </li>
+              <li class="service">
+                <img
+                  class="service__img"
+                  src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                  alt=""
+                />
+                <span> Customizable</span>
+                <p class="service__description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+                  aspernatur expedita deserunt ab.
+                </p>
+              </li>
+              <li class="service">
+                <img
+                  class="service__img"
+                  src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                  alt=""
+                />
+                <span> Reliable</span>
+                <p class="service__description">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Molestias laudantium hic laboriosam aperiam.
+                </p>
+              </li>
+              <li class="service">
+                <img
+                  class="service__img"
+                  src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                  alt=""
+                />
+                <span> Fast</span>
+                <p class="service__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Incidunt dignissimos officiis qui fugiat?
+                </p>
+              </li>
+              <li class="service">
+                <img
+                  class="service__img"
+                  src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
+                  alt=""
+                />
+                <span> Easy</span>
+                <p class="service__description">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. A
+                  molestias laboriosam blanditiis itaque.
+                </p>
+              </li>
             </ul>
+          </div>
         </div>
+      </div>
     </section>
   </body>
 </html>
