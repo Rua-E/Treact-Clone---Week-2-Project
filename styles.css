@@ -21,7 +21,7 @@ a {
 
 h1 {
     color: #1a202c;
-    font-size: 30px;
+    font-size: 72px;
     font-weight: 700;
     line-height: 1.25;
     margin: 0px;
@@ -29,8 +29,8 @@ h1 {
 
 p {
     color: #243e63;
-    font-size: 16px;
-    margin: 20px 0px;
+    font-size: 27px;
+    margin: 48px 0px;
 }
 
 
@@ -55,19 +55,6 @@ li {
     padding: 80px 0;
 }
 
-.btn {
-    background-color: #6415ff;
-    padding: 18px 48px;
-    border-radius: 50px;
-    color: #f7fafc;
-    transition: all 300ms ease;
-    color: rgb(247, 250, 252);
-    cursor: pointer;
-    border-style: solid;
-    border-color: rgb(226, 232, 240);
-    text-size-adjust: 100%;
-    tab-size: 4;
-}
 
 .btn
 
@@ -241,6 +228,7 @@ HEADER
 .header__container {
     padding: 96px;
     width: 100%;
+    display: flex;
 }
 
 .header__description {
@@ -254,6 +242,7 @@ HEADER
 .header__img--logo {
     width: 100%;
     display: flex;
+    overflow-clip-margin: content-box;
 }
 .header__img {
     width: 100%;
@@ -269,33 +258,70 @@ HEADER
     text-align: left;
 }
 
-input {
-    width: 100%;
+
+.header__form--wrapper--big {
+    display: none;
+    align-self: center;
+    max-width: 768px;
+    padding: 6px 0px;
+    border-style: solid;
+    border: 2px solid rgb(226, 232, 240);
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
     border-radius: 9999px;
-    border-width: 2px;
+}
+
+.header__form {
+    display: flex;
+    font-display: column;
+    align-items: center;
+}
+
+.header__input--container--big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+}
+
+input {
+    border-radius: 9999px;
+    color: rgb(226, 232, 240);
+    border: solid rgb(226, 232, 240);
+    background-color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 16px;
+    width: 100%;
+    padding: 30px;
+    z-index: 2;
     font-stretch: 100%;
-    color: ;
-    cursor: text;
-    display: inline-block;
-    line-height: 24px;
-    padding-block-start: 16px;
-    padding-block-end: 16px;
-    padding: 16px 0px 16px 32px;
-    padding-inline-start: 32px;
-    tab-size: 4;
-    text-size-adjust: 100%;
+    text-align: start;
+    text-indent: 0px;
     text-shadow: none;
-    writing-mode: horizontal-tb;
-    border-color: rgb(226, 232,240);
-    border-style: solid;
+    text-transform: none;
+    word-spacing: 0px;
 }
 
-::placeholder {
-    color: rgb(226, 232,240);
+.header__btn {
+    background-color: rgb(100, 21, 255);
+    padding: 30px 48px;
+    margin-left: auto;
+    border-radius: 9999px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 300ms ease;
+    color: rgb(247, 250, 252);
+    cursor: pointer;
 }
 
+.header__form--wrapper--small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* 
 
@@ -327,5 +353,17 @@ SERVICES
     }
     .btn__menu {
         display: block;
+    }
+    .header__btn {
+        margin: 24px 0px 0px;
+        width: 100%;
+    }
+    .header__form--wrapper--small {
+        
+        /*gone
+        display: flex;
+        flex-direction:column;
+        display: none;
+        */
     }
 }
