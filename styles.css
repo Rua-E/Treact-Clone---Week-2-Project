@@ -351,7 +351,8 @@ QUALITY WORK
 */
 
 .quality__work--container,
-.steps__container {
+.steps__container,
+.values__container {
     display: flex;
 }
 
@@ -362,7 +363,7 @@ QUALITY WORK
     flex-direction: column;
 }
 
-.quality-steps__img {
+.quality-steps-values__img {
     width: 50%;
 }
 
@@ -373,6 +374,25 @@ STEPS
 
 */
 
+.steps__info--container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.steps__info--wrapper {
+    display: flex;
+}
+
+.info__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 
+
+VALUES
+
+*/
 
 @media (max-width: 550px) {
     .nav__list--links {
