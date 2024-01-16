@@ -33,8 +33,22 @@ h2 {
   font-size: 72px;
   font-weight: 900;
   letter-spacing: 1.8px;
-  line-height: 108px;
+  line-height: 90px;
   text-size-adjust: 100%;
+  margin-top: 24px;
+  text-align: left;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h6 {
+  color: rgb(36, 62, 99);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 30px;
 }
 
 /*
@@ -91,7 +105,15 @@ NAVIGATION BAR
   align-items: center;
   padding: 32px;
 }
-.logo {
+
+.nav__logo--wapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 6px;
+}
+
+.nav__logo--img {
   width: 60px;
   height: 60px;
   margin: 0 18px 0 0;
@@ -103,12 +125,7 @@ NAVIGATION BAR
   color: #243e63;
 }
 
-.nav__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 0 6px;
-}
+
 
 .nav__list--links {
   display: flex;
@@ -333,7 +350,7 @@ input {
 
 .purple__btn {
   background-color: rgb(100, 21, 255);
-  padding: 30px 48px;
+  padding: 18px 48px;
   margin-left: auto;
   border-radius: 9999px;
   border: none;
@@ -433,6 +450,7 @@ QUALITY WORK/VALUES/TESTIMONIALS
     flex-direction: column;
     width: 50%;
     text-size-adjust: 100%;
+    padding: 48px 0px;
 }
 
 .section__img {
@@ -467,25 +485,82 @@ STEPS
 
 .steps__info--wrapper {
   display: flex;
+  margin-top: 48px;
 }
 
 .info__wrapper {
   display: flex;
   flex-direction: column;
+
 }
 
+.step__number {
+  color: rgb(203, 213, 224);
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  text-size-adjust: 100%;
+}
+
+.info__wrapper {
+  margin: 0px 0px 0px 36px;
+  text-size-adjust: 100%;
+}
+
+.step__para {
+  margin-top: 18px;
+  color: rgb(113, 128, 150);
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 42px;
+  max-width: 480px;
+  tab-size: 4;
+  text-align: left;
+  text-size-adjust: 100%;
+}
 /*
 
 VALUES
 
 */
 
+
+.principles__wrapper {
+  display: flex;
+}
+
+.principle__wrapper {
+  margin: 48px 0px 0px 0px;
+}
+
+.principle__banner {
+  display: flex;
+}
+
 .margin__top {
   margin-top: 48px;
 }
+.margin__right {
+  margin-right: 48px;
+}
+.margin__top2 {
+  margin-top: 72px;
+}
 
 .principle__title {
-  
+  margin-left: 18px;
+  color: rgb(36, 62, 99);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 45px;
+  text-size-adjust: 100%;
+}
+
+.principle__para {
+  margin-top: 24px;
+  color: rgb(113, 128, 150);
+  line-height: 39px;
+  text-size-adjust: 100%;
 }
 
 /*
@@ -840,6 +915,91 @@ TESTIMONIAL
     tab-size: 4;
     text-align: left;
 }
+
+
+/*
+
+FOOTER
+
+*/
+
+
+.footer__lists--wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 36px;
+  margin-top: -72px;
+  tab-size: 4;
+  text-align: left;
+  text-size-adjust: 100%;
+  background-color: black;
+}
+
+.footer__list {
+  color: rgb(247, 250, 252);
+  margin-top: 72px;
+  line-height: 36px;
+  width: 93px;
+}
+
+.list__item {
+  padding-bottom: 6px;
+  color: rgb(247, 250, 252);
+  cursor: pointer;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.white {
+  color: rgb(247, 250, 252);
+}
+
+.list__item:hover {
+
+  border-bottom: 2px solid rgb(247, 250, 252);
+}
+
+.final__footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 6px;
+}
+
+.footer__logo--img {
+  width: 60px;
+  height: 60px;
+  margin: 0 18px 0 0;
+}
+
+.footer__logo--title {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(247, 250, 252);
+  letter-spacing: 1.5px;
+  line-height: 45px;
+  tab-size: 4;
+  text-size-adjust: 100%;
+  margin: 0px 0px 0px 12px;
+  background-color: black;
+}
+
+.footer__copyright {
+  color: rgb(203, 213, 224);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-size-adjust: 100%;
+}
+
+
 
 @media (max-width: 550px) {
   .nav__list--links {
