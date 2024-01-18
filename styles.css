@@ -445,19 +445,31 @@ FEATURES
   display: flex;
   flex-wrap: wrap;
 }
-.service__img--wrapper {
+.service__img--wrappers {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  text-align: left;
   width: 29%;
+  max-width: 576px;
+  height: 100%;
   max-width: 576px;
   margin: 0px 24px;
   padding: 48px 12px;
   height: 550px;
 }
 
+.service__img--wrapper {
+  flex-shrink: 0;
+  border-radius: 9999px;
+  border: 1px solid rgb(226, 232, 240);
+  padding: 30px;
+  text-align: center;
+}
 .service__img {
-  padding: 20px;
+  height: 36px;
+  width: 35px;
+  max-width: 100%;
 }
 
 .service__wrapper {
@@ -1141,7 +1153,7 @@ line-height: 36px;
 }
 
 
-@media (mix-width: 640px) {
+@media (max-width: 640px) {
   .email__input--big {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -1151,7 +1163,23 @@ line-height: 36px;
     margin-bottom: 24px;
     width: 100%;
   }
+
+  .service__img {
+    text-align: left;
+  }
+  .service__img--wrappers {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
+
+@media (max-width: 768px) {
+  .service__img--wrappers {
+    width: 50% ;
+  }
+}
+
 
 
 
