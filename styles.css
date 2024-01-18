@@ -35,7 +35,6 @@ h2 {
   letter-spacing: 1.8px;
   line-height: 90px;
   text-size-adjust: 100%;
-  text-align: left;
 }
 
 h5 {
@@ -262,8 +261,8 @@ HEADER
 
 .header__container {
   padding: 96px;
-  width: 100%;
   display: flex;
+  position: relative;
 }
 
 .header__description {
@@ -297,10 +296,27 @@ HEADER
   line-height: 36px;
   opacity: 0.5;
 }
+
+.header__img--wrapper {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  align-items: center;
+  width: 60%;
+  max-width: 768px;
+  min-width: 0px;
+}
+
 .header__img {
-  width: 100%;
-  max-width: 60%;
-  justify-content: flex-end;
+  position: relative;
+  margin-top: 0px;
+  height: auto;
+  display: block;
+  align-self: flex-end;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 }
 
 .email__input--big--container {
@@ -1180,7 +1196,11 @@ line-height: 36px;
   }
 }
 
-
+@media (max-width: 1024px) {
+  .header__img--wrapper {
+    margin-top: 72px;
+  }
+}
 
 
 /*
