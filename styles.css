@@ -159,13 +159,14 @@ NAVIGATION BAR
 
 .button {
   background-color: #6415ff;
+  font-weight: 600;
   padding: 18px 48px;
   border-radius: 50px;
   color: #f7fafc;
   transition: all 300ms ease;
 }
 
-.button:hover {
+.button:hover, .purple__btn:hover, .big__btn:hover {
   background-color: rgb(91, 21, 215);
 }
 
@@ -302,7 +303,62 @@ HEADER
   justify-content: flex-end;
 }
 
+.email__input--big--container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 672px;
+  text-align: center;
+}
 
+.email__input--big {
+  color: rgb(226, 232, 240);
+  width: 672px;
+  padding: 30px 288px 30px 48px;
+  border: 2px solid rgb(226, 232, 240);
+  border-radius: 9999px;
+  background-color: rgb(255, 255, 255);
+  appearance: auto;
+  cursor: text;
+  display: inline-block;
+  font-size: 24px;
+  font-stretch: 100%;
+  word-spacing: 0px;
+  font-weight: 500;
+  line-height: 36px;
+  text-indent: 0px;
+}
+
+.email__input--big:hover {
+  border-color: rgb(133, 133, 133);
+  transition-duration: border-color 300ms ease;
+}
+
+.big__btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0px;
+  top: 0px;
+  margin: 12px 12px 12px 0px;
+  padding: 24px 0px;
+  width: 240px;
+  line-height: 1;
+  font-size: 24px;
+  background-color: rgb(100, 21, 255);
+  font-weight: 700;
+  border-radius: 50px;
+  color: rgb(247, 250, 252);
+  transition: all 300ms ease;
+  margin-left: auto;
+  border-radius: 9999px;
+  cursor: pointer;
+  border: none;
+}
+
+
+/*
 .header__form--wrapper--big {
   display: none;
   align-self: center;
@@ -313,6 +369,9 @@ HEADER
   border-image-repeat: stretch;
   border-image-slice: 100%;
   border-radius: 9999px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 .header__form {
@@ -327,6 +386,14 @@ HEADER
   align-items: center;
   width: 100%;
   max-width: 450px;
+}
+
+.email {
+  padding-top: ;
+}
+
+.big__btn {
+  position: absolute;
 }
 
 input {
@@ -346,6 +413,7 @@ input {
   text-transform: none;
   word-spacing: 0px;
 }
+*/
 
 .purple__btn {
   background-color: rgb(100, 21, 255);
@@ -353,8 +421,7 @@ input {
   margin-left: auto;
   border-radius: 9999px;
   border: none;
-  color: white;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 21px;
   transition: all 300ms ease;
   color: rgb(247, 250, 252);
@@ -1072,3 +1139,28 @@ line-height: 36px;
         */
   }
 }
+
+
+@media (mix-width: 640px) {
+  .email__input--big {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .big__btn {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+}
+
+
+
+/*
+
+.email__input--small {
+padding 24px 0px 24px 28px
+width 362px 
+padding 0px
+margin 0px
+}
+*/
