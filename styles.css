@@ -474,9 +474,9 @@ QUALITY WORK/VALUES/TESTIMONIALS
 
 .section__info--wrapper {
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .section__info--para{
   font-size: 27px;
@@ -497,9 +497,10 @@ QUALITY WORK/VALUES/TESTIMONIALS
 }
 
 .section__info {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 4rem;
 }
 
 .section__img {
@@ -576,6 +577,45 @@ VALUES
 
 .principle__banner {
   display: flex;
+  align-items: center;
+}
+
+.principle__img1 {
+  background-color: rgb(154, 230, 180);
+  color: rgb(39, 103, 73);
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 14px 24px;
+  text-align: center;
+  border-radius: 9999px;
+  line-height: 36px;
+  overflow-clip-margin: content-box;
+  text-size-adjust: 100%;
+  vertical-align: middle;
+  stroke: rgb(39, 103, 73);
+}
+
+.principle__img2 {
+  background-color: rgb(254, 178, 178);
+  color: rgb(155, 44, 44);
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  flex-shrink: 0;
+  padding: 12px 22px;
+  text-align: center;
+  border-radius: 9999px;
+  line-height: 36px;
+  overflow-clip-margin: content-box;
+  text-size-adjust: 100%;
+  vertical-align: middle;
+  stroke: rgb(155, 44, 44);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  
 }
 
 .margin__top {
@@ -635,6 +675,7 @@ PRICES
   flex-wrap: wrap;
 }
 .plan__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -654,6 +695,7 @@ PRICES
   position: absolute;
   left: 0px;
   right: 0px;
+  top: 0px;
   height: 12px;
   max-width: 576px;
   line-height: 36px;
@@ -767,6 +809,17 @@ PRICES
   cursor: pointer;
 }
 
+.decoration__left {
+  pointer-events: none;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -20;
+  height: 16rem;
+  width: 16rem;
+  opacity: 0.25;
+}
+
 .green__highlight {
   background: linear-gradient(
     115deg,
@@ -805,13 +858,32 @@ TESTIMONIAL
 }
 
 .customer__reviews--wrapper {
-    display: flex;
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+    /*display: flex;
     flex-direction: column;
     height: 747px;
     width: 461px;
     line-height: 36px;
     text-align: left;
-    text-size-adjust: 100%;
+    text-size-adjust: 100%;*/
+}
+
+.slick-slider {
+  display: block;
+  position: relative;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.customer__review {
+  display: block;
+  position: relative;
+  transform: translateZ(0);
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
 }
 
 .rating__stars {
@@ -1068,7 +1140,6 @@ footer {
 .footer__list {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: calc(100% / 5);
   margin-top: 72px;
   line-height: 36px;
@@ -1223,7 +1294,7 @@ FINAL SECTION
   width: 100%;
   margin-right: 48px;
   padding: 30px 60px;
-  margin-top: 24px;
+  
   background-color: rgb(245, 101, 101);
   color: rgb(247, 250, 252);
   border-radius: 9999px;
@@ -1337,8 +1408,12 @@ FINAL SECTION
   }
 
   .section__info {
-    text-align: left;
+    padding-left: 3rem;
     order: 9999;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 50%;
   }
 
 
@@ -1380,7 +1455,7 @@ FINAL SECTION
   }
 
   .section__info {
-    padding: 48px 0px;
+    padding-left: 4rem;
   }
 
   .menu__question {
