@@ -51,13 +51,6 @@ h6 {
   line-height: 30px;
 }
 
-/*
-p {
-  color: #243e63;
-  font-size: 27px;
-  margin: 48px 0px;
-}
-*/
 
 .purple {
   color: rgb(100, 21, 255);
@@ -725,13 +718,6 @@ PRICES
     padding: 144px 0px;
 }
 
-/*
-.prices__info--wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-*/
 .prices__plans--wrapper {
   position: relative;
   display: flex;
@@ -932,13 +918,6 @@ TESTIMONIAL
   margin-top: 2rem;
   width: 100%;
   text-align: center;
-    /*display: flex;
-    flex-direction: column;
-    height: 747px;
-    width: 461px;
-    line-height: 36px;
-    text-align: left;
-    text-size-adjust: 100%;*/
 }
 
 .slick-slider {
@@ -1258,6 +1237,7 @@ FINAL SECTION
 .final__button1 {
   width: 100%;
   margin-right: 48px;
+  margin-top: 24px;
   padding: 30px 60px;
   
   background-color: rgb(245, 101, 101);
@@ -1496,15 +1476,7 @@ line-height: 36px;
   .btn__menu {
     display: block;
   }
-
-  .header__form--wrapper--small {
-    /*gone
-        display: flex;
-        flex-direction:column;
-        display: none;
-        */
   }
-}
 
 
 @media (max-width: 640px) {
@@ -1548,6 +1520,12 @@ line-height: 36px;
     font-size: 1rem;
   }
 
+  .footer__lists--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: center;
+  }
   .plans__btn {
     padding-left: 2rem;
     padding-right: 2rem;
@@ -1570,23 +1548,41 @@ line-height: 36px;
     padding-bottom: 120px;
   }
 
+
+  .section__container {
+    flex-direction: column-reverse;
+  }
   .section__info {
     padding-left: 3rem;
     order: 9999;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    width: 50%;
+    width: 100%;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
   }
 
 
   .section__img {
-    width: 50%;
+    width: 100%;
+    max-width: 28rem;
   }
   .section__img-img {
     max-width: none;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    max-width: 28rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .footer__lists--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: center;
   }
 }
 
@@ -1618,12 +1614,25 @@ line-height: 36px;
   
 
   .header__container {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
 
   .section__info {
     padding-left: 4rem;
+  }
+
+  .prices__plans--wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  }
+  .plan__container {
+    position: relative;
+    width: 100%;
+    max-width: 24rem;
   }
 
   .menu__question {
@@ -1635,20 +1644,26 @@ line-height: 36px;
     padding-top: 120px;
     padding-bottom: 120px;
   }
-
+  
   .final__section--content {
     padding: 120px 0px;
+    flex-direction: column;
+    align-items: center;
   }
   .final__info {
     flex-direction: row;
     text-align: left;
-    width: 50%;
+    width: 100%;
     font-size: 36px;
+    text-align: center;
   }
 
   .final__button--container {
     margin-top: 0px;
     justify-content: flex-end;
+    margin-top: 1.5rem;
+    width: 70%;
+    text-align: center;
   }
 
   .final__button1 {
@@ -1665,12 +1680,3 @@ line-height: 36px;
 }
 
 
-/*
-
-.email__input--small {
-padding 24px 0px 24px 28px
-width 362px 
-padding 0px
-margin 0px
-}
-*/
