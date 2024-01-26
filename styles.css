@@ -24,7 +24,7 @@ a {
 
 h1 {
   color: rgb(26, 32, 44);
-  font-size: 72px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 1.25;
   margin: 0px;
@@ -32,11 +32,12 @@ h1 {
 
 h2 {
   color: rgb(36, 62, 99);
-  font-size: 72px;
+  font-size: 48px;
   font-weight: 900;
   letter-spacing: 1.8px;
-  line-height: 90px;
+  line-height: 1.25;
   text-size-adjust: 100%;
+  margin: 16px 0px 0px;
 }
 
 h5 {
@@ -46,7 +47,7 @@ h5 {
 
 h6 {
   color: rgb(36, 62, 99);
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 30px;
 }
@@ -58,10 +59,9 @@ h6 {
 
 .purple__title {
   color: rgb(100, 21, 255);
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 36px;
-  margin-bottom: 24px;
 }
 
 li {
@@ -69,6 +69,7 @@ li {
 }
 
 .row {
+  position: relative;
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -77,9 +78,11 @@ li {
 .container {
   position: relative;
   padding: 80px 0;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.btn
 
 
 
@@ -110,13 +113,13 @@ NAVIGATION BAR
 }
 
 .nav__logo--img {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   margin: 0 18px 0 0;
 }
 
 .nav__logo--title {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 900;
   color: #243e63;
 }
@@ -128,7 +131,7 @@ NAVIGATION BAR
 }
 .nav__link--anchor {
   color: #243e63;
-  font-size: 21px;
+  font-size: 14px;
   font-weight: 600;
   margin: 0 36px;
   padding: 0 0 6px;
@@ -157,7 +160,7 @@ NAVIGATION BAR
 .button {
   background-color: #6415ff;
   font-weight: 600;
-  padding: 18px 48px;
+  padding: 12px 32px;
   border-radius: 50px;
   color: #f7fafc;
   transition: all 300ms ease;
@@ -169,7 +172,7 @@ NAVIGATION BAR
 
 .btn__menu {
   background-color: transparent;
-  font-size: 40px;
+  font-size: 24px;
   text-align: center;
   border: none;
   color: #243e63;
@@ -230,7 +233,7 @@ NAVIGATION BAR
 }
 
 .menu__link {
-  font-size: 27px;
+  font-size: 18px;
   color: #1a202c;
   margin: 12px 0;
   padding: 0 0 6px;
@@ -252,7 +255,7 @@ HEADER
 
 .header__info--para {
     color: rgb(36, 62, 99);
-    font-size: 27px;
+    font-size: 16px;
     line-height: 40px;
     margin: 48px 0px;
 }
@@ -280,7 +283,7 @@ HEADER
 }
 .trusted__logo {
   color: rgb(160, 174, 192);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 27px;
   letter-spacing: 0.9px;
@@ -367,7 +370,7 @@ HEADER
   width: 240px;
   max-width: 100%;
   line-height: 1;
-  font-size: 24px;
+  font-size: 16px;
   background-color: rgb(100, 21, 255);
   font-weight: 700;
   border-radius: 50px;
@@ -386,10 +389,13 @@ HEADER
   border-radius: 9999px;
   border: none;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 14px;
   transition: all 300ms ease;
   color: rgb(247, 250, 252);
+  margin-top: 32px;
   cursor: pointer;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .header__form--wrapper--small {
@@ -432,23 +438,21 @@ FEATURES
   text-align: left;
   width: 29%;
   max-width: 576px;
-  height: 100%;
   max-width: 576px;
-  margin: 0px 24px;
-  padding: 48px 12px;
-  height: 550px;
+  margin: 0px 16px;
+  padding: 32px 9px;
 }
 
 .service__img--wrapper {
   flex-shrink: 0;
   border-radius: 9999px;
   border: 1px solid rgb(226, 232, 240);
-  padding: 30px;
+  padding: 20px;
   text-align: center;
 }
 .service__img {
-  height: 36px;
-  width: 35px;
+  height: 24px;
+  width: 24px;
   max-width: 100%;
 }
 
@@ -459,7 +463,7 @@ FEATURES
 .service {
   margin-top: 24px;
   color: rgb(36, 62, 99);
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.9px;
   line-height: 36px;
@@ -467,10 +471,11 @@ FEATURES
   text-size-adjust: 100%;
 }
 .service__description {
-  margin-top: 24px;
+  margin-top: 16px;
   color: rgb(124, 139, 161);
   font-weight: 500;
-  line-height: 48px;
+  line-height: 2;
+  font-size: 16px;
 }
 
 .features__decoration--right {
@@ -478,7 +483,7 @@ FEATURES
   position: absolute;
   right: 0px;
   bottom: 0px;
-  width: 384px;
+  width: 256px;
   height: 600px;
   transform: matrix(1, 0, 0, 1, 192, 288);
   transform: translate(8rem, 12rem);
@@ -516,12 +521,13 @@ QUALITY WORK/VALUES/TESTIMONIALS
   text-align: center;
 }
 .section__info--para{
-  font-size: 27px;
+  font-size: 18px;
   font-weight: 500;
-  margin-top: 24px;
+  margin-top: 16px;
   color: rgb(124, 139, 161);
-  line-height: 44px;
-  max-width: 864px;
+  line-height: 1.6;
+  width: 100%;
+  max-width: 576px;
 }
 .section__container {
   display: flex;
@@ -529,7 +535,7 @@ QUALITY WORK/VALUES/TESTIMONIALS
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding: 144px 0px;
+  padding: 96px 0px;
   
 }
 
@@ -537,7 +543,8 @@ QUALITY WORK/VALUES/TESTIMONIALS
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 4rem;
+  max-width: 576px;
+  padding: 32px 0px;
 }
 
 .section__img {
@@ -568,7 +575,7 @@ STEPS
 
 .steps__info--wrapper {
   display: flex;
-  margin-top: 48px;
+  margin-top: 32px;
 }
 
 .info__wrapper {
@@ -579,24 +586,24 @@ STEPS
 
 .step__number {
   color: rgb(203, 213, 224);
-  font-size: 54px;
+  font-size: 36px;
   font-weight: 600;
   line-height: 54px;
   text-size-adjust: 100%;
 }
 
 .info__wrapper {
-  margin: 0px 0px 0px 36px;
+  margin: 0px 0px 0px 24px;
   text-size-adjust: 100%;
 }
 
 .step__para {
-  margin-top: 18px;
+  margin-top: 0.75rem;
   color: rgb(113, 128, 150);
-  font-size: 21px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 42px;
-  max-width: 480px;
+  line-height: 2;
+  max-width: 20rem;
   tab-size: 4;
   text-align: left;
   text-size-adjust: 100%;
@@ -607,10 +614,10 @@ STEPS
   right: 0px;
   bottom: 0px;
   z-index: -10;
-  height: 5rem;
-  width: 5rem;
+  height: 10rem;
+  width: 10rem;
   left: 50%;
-  transform: matrix(1, 0, 0, 1, -60, 60);
+  transform: matrix(1, 0, 0, 1, -80, 80);
   opacity: 0.15;
   fill: currentColor;
   color: rgb(100, 21, 255);
@@ -638,11 +645,11 @@ VALUES
 .principle__img1 {
   background-color: rgb(154, 230, 180);
   color: rgb(39, 103, 73);
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
   display: inline-block;
   flex-shrink: 0;
-  padding: 14px 24px;
+  padding: 4px 12px;
   text-align: center;
   border-radius: 9999px;
   line-height: 36px;
@@ -655,11 +662,11 @@ VALUES
 .principle__img2 {
   background-color: rgb(254, 178, 178);
   color: rgb(155, 44, 44);
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
   display: inline-block;
   flex-shrink: 0;
-  padding: 12px 22px;
+  padding: 4px 12px;
   text-align: center;
   border-radius: 9999px;
   line-height: 36px;
@@ -673,18 +680,13 @@ VALUES
   
 }
 
-.margin__top {
-  margin-top: 48px;
-}
 .margin__right {
   margin-right: 48px;
 }
-.margin__top2 {
-  margin-top: 72px;
-}
+
 
 .margin__right2 {
-  margin-right: 96px;
+  margin-right: 64px;
 }
 
 .margin__left2 {
@@ -692,19 +694,18 @@ VALUES
 }
 
 .principle__title {
-  margin-left: 18px;
+  margin-left: 0.75rem;
   color: rgb(36, 62, 99);
-  font-size: 30px;
+  font-size: 1.25rem;
   font-weight: 700;
   line-height: 45px;
   text-size-adjust: 100%;
 }
 
 .principle__para {
-  margin-top: 24px;
+  margin-top: 16px;
   color: rgb(113, 128, 150);
-  line-height: 39px;
-  text-size-adjust: 100%;
+  line-height: 1.6;
 }
 
 /*
@@ -731,10 +732,10 @@ PRICES
   position: relative;
   border: 2px solid rgb(226, 232, 240);
   border-radius: 12px;
-  width: calc(100%/3.4);
-  max-width: 576px;
-  margin: 96px 48px 0 0;
-  padding: 12px 48px 0 48px;
+  width: 100%;
+  max-width: calc(100% / 3.4);
+  margin: 64px 32px 0px 0px;
+  padding: 8px 32px 0 32px;
   line-height: 36px;
   tab-size: 4;
   text-size-adjust: 100%;
@@ -758,19 +759,18 @@ PRICES
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 29%;
-  max-width: 576px;
-  padding: 48px 0;
+  padding: 32px 0;
+  line-height: 1.6;
 }
 .name {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 48.75px;
 }
 
 .price {
-  margin: 6px 0;
-  font-size: 72px;
+  margin: 4px 0;
+  font-size: 48px;
   font-weight: 700;
   line-height: 117px;
 }
@@ -781,6 +781,7 @@ PRICES
   line-height: 39px;
   tab-size: 4;
   color: rgb(160, 174, 192);
+  font-size: 16px;
 }
 
 .plan__features {
@@ -790,22 +791,22 @@ PRICES
   align-items: center;
   flex-grow: 1;
   flex-shrink: 1;
- margin: 0px --48px;
-  padding: 48px;
+  padding: 32px;
+  margin: 0px -32px;
   width: 100%;
-  max-width: 576px;
   text-align: center;
-  line-height: 36px;
+  line-height: 24px;
   tab-size: 4;
-  border: solid rgb(226, 232, 240);
+  border: 2px solid rgb(226, 232, 240);
   border-right: 0px;
   border-left: 0px;
 }
 
 
 .feature {
-    margin-top: 30px;
+    margin-top: 20px;
     font-weight: 500;
+    font-size: 16px;
     line-height: 36px;
     tab-size: 4;
     color: rgb(113, 128, 150);
@@ -814,7 +815,7 @@ PRICES
 .main__feature {
     color: rgb(26, 32, 44);
     margin-top: 0px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.75px;
     line-height: 45px;
@@ -826,6 +827,7 @@ PRICES
     135deg,
     rgb(76, 81, 191) 0%,
     rgb(102, 126, 234) 100%);
+    background-origin: padding-box;
 }
 
 .purple__border {
@@ -833,7 +835,7 @@ PRICES
 }
 
 .plans__button--container {
-  padding: 48px;
+  padding: 32px 64px;
   width: 100%;
 }
 .plans__btn {
@@ -842,17 +844,13 @@ PRICES
   align-self: flex-start;
   text-align: center;
   text-indent: 0px;
-  padding: 24px 48px;
-  padding-block-end: 24px;
-  padding-block-start: 24px;
-  padding-inline-end: 48px;
-  padding-inline-start: 48px;
+  padding: 16px 32px;
   margin-left: auto;
   border-radius: 9999px;
   border: none;
   color: white;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 14px;
   font-stretch: 100%;
   width: 100%;
   transition: all 300ms ease;
@@ -873,7 +871,7 @@ PRICES
   z-index: -20;
   height: 16rem;
   width: 16rem;
-  transform: matrix(1, 0, 0, 1, -192, 192);
+  transform: matrix(1, 0, 0, 1, -128, 128);
   opacity: 0.25;
 }
 
@@ -906,10 +904,10 @@ TESTIMONIAL
 
 
 .testimonials__para {
-    margin-top: 36px;
-    font-size: 27px;
+    margin-top: 24px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 44px;
+    line-height: 1.62;
     text-align: left;
     color: rgb(124, 139, 161);
 }
@@ -942,17 +940,17 @@ TESTIMONIAL
 }
 
 .fas {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     line-height: 36px;
-    margin-right: 6px;
+    margin-right: 4px;
     color: rgb(246, 173, 85);
     fill: rgb(246, 173, 85);
 }
 
 .section__subtitle {
-    margin-top: 24px;
-    font-size: 30px;
+    margin-top: 16px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 45px;
     height: 36px;
@@ -962,9 +960,10 @@ TESTIMONIAL
 }
 
 .subsection__para {
-    margin: 24px 0 60px;
+    margin: 16px 0 40px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 39px;
+    line-height: 1.6;
     text-align: left;
     color: rgb(74, 85, 104);
     margin-block-end: 60px;
@@ -976,6 +975,7 @@ TESTIMONIAL
 
 .customer__info--wrapper {
     display: flex;
+    justify-content: space-between;
 }
 .customer__info {
     margin-top: 6px;
@@ -987,8 +987,8 @@ TESTIMONIAL
 }
 
 .customer__picture {
-    height: 120px;
-    width: 120px;
+    height: 80px;
+    width: 80px;
     max-width: 100%;
     overflow-x: clip;
     overflow-y: clip;
@@ -1002,74 +1002,63 @@ TESTIMONIAL
 }
 .customer__name--title {
     margin-left: 36px;
-    line-height: 36px;
-    tab-size: 4;
     text-align: left;
+    align-content: center;
     text-size-adjust: 100%;
     user-select: none;
 }
 
 .customer__name {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 45px;
     text-align: left;
     color: rgb(36,62, 99);
     user-select: none;
 }
 
 .customer__title {
-    font-weight: 500px;
-    line-height: 36px;
-    tab-size: 4;
-    text-align: left;
-    color: rgb(124, 139, 161);
-    user-select: none;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  color: rgb(124, 139, 161);
+  user-select: none;
 }
 
 .customer__info--arrows {
     display: flex;
+    line-height: 24px;
 }
 
 .customer__arrows--btn {
-    margin: 0px 18px;
-    padding: 24px;
-    padding-block: 24px;
-    padding-inline: 24px;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    text-indent: 0px;
-    text-rendering: auto;
-    text-shadow: none;
-    display: flex;
-    align-items: flex-start;
+    margin: 0px 12px;
+    padding: 16px;
+    height: 50px;
+    width: 50px;
     border-radius: 9999px;
-    word-spacing: 0px;
-    color: rgb(100, 21, 255);
     background-color: rgb(237, 242, 247);
+    color: rgb(100, 21, 255);
     border-color: transparent;
-    border-image-repeat: stretch;
-    border-image-width: 1;
-    border-image-slice: 100%;    
     appearance: button;
-    background-image: none;
     cursor: pointer;
-}
-
-.customer__arrows--btn::after {
-    background-color: rgb(100, 21, 255);
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-clip-margin: content-box;
+  }
   
+  .customer__arrows--btn:hover {
+    background-color: rgb(226, 232, 240);
     transition: all 300ms ease;
     text-transform: none;
-}
-
-.fa_solid {
-    height: 24px;
-    width: 24px;
+    color: rgb(80, 17, 204);
+  }
+  
+  .fa-solid {
+    height: auto;
+    width: auto;
     overflow: hidden;
-    stroke-width: 3px;
+    stroke-width: 3;
 }
 
 .divider {
@@ -1160,13 +1149,11 @@ FAQs
   z-index: -20;
   height: 14rem;
   width: 14rem;
-  transform: matrix(1, 0, 0, 1, 224.011, -72);
-  transform-origin: 0px 0px;
+  transform: matrix(1, 0, 0, 1, 149, -48);
   transform: translate(300, 300);
+  transform-origin: 0px 0px;
   opacity: 0.15;
   color: rgb(79, 209, 197);
-  overflow-clip-margin: content-box;
-  overflow: hidden;
 }
 
 .FAQ__decoration--bottom {
