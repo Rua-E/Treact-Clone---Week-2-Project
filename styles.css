@@ -1411,32 +1411,43 @@ footer {
 }
 
 .social__links {
-  animation: fade-up 650ms 800ms backwards;
   display: flex;
   align-items: center;
   line-height: 36px;
+  
 }
 .social__wrapper {
   cursor: pointer;
-  margin-right: 24px;
-  line-height: 36px;
-  overflow-clip-margin: content-box;
+  margin-right: 1rem;
+  line-height: 24px;
   vertical-align: middle;
+  background-color: white;
+  border-radius: 9999px; 
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__wrapper:hover {
+  background-color: rgb(203, 213, 224);
+  transition-duration: 300ms ease;
 }
 
 .social__link {
-  height: 24px;
-  width: 24px;
-  line-height: 36px;
-  font-size: 20px;
+  height: 0.1rem;
+  width: 0.1rem;
+  padding: 0.5rem; 
   color: #242424;
-  padding: 12px; 
-  border-radius: 9999px; 
   color: rgb(26, 32, 44);
-  background-color: white; 
   text-size-adjust: 100%;
   transform-origin: 0px 0px;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .footer__decoration--left {
@@ -1468,7 +1479,7 @@ footer {
 */
 
 
-@media (max-width: 550px) {
+@media (max-width: 1000px) {
   .nav__list--links {
     display: none;
   }
@@ -1512,8 +1523,8 @@ footer {
     flex-direction: row;
   }
   .final__button1 {
-    padding: 18px 36px;
-    margin-right: 0px;
+    padding: 20px 40px;
+    margin-right: 24px;
     width: auto;
     padding: 1rem 2rem;
     font-size: 1rem;
@@ -1525,20 +1536,26 @@ footer {
     justify-content: flex-start;
     text-align: center;
   }
+
   .plans__btn {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  .header__description {
+    width: 100%;
+    max-width: none;
+    text-align: left;
   }
 }
 
 @media (max-width: 768px) {
   .service__img--wrappers {
-    width: 50% ;
+    width: 100% ;
   }
 
   .purple__btn {
     margin-top: 0px;
-    margin-right: 0px;
+    margin-right: auto;
     margin-top: 48px;
   }
 
@@ -1577,20 +1594,23 @@ footer {
     padding-bottom: 5rem;
   }
 
-  .footer__lists--wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    text-align: center;
+ 
+  
+
+  .final__footer--wrapper {
+    flex-direction: column;
+  }
+
+  .footer__lists {
+    width: auto;
+  }
+
+  .social__links {
+    margin-top: 32px;
   }
 }
 
 @media (max-width: 1024px) {
-  .header__description {
-    width: 40%;
-    max-width: none;
-    text-align: left;
-  }
   .header__img--wrapper {
     margin-top: 72px;
     align-self: flex-end;
@@ -1666,7 +1686,7 @@ footer {
   }
 
   .final__button1 {
-    padding: 24px 48px;
+    padding: 20px 40px;
   }
   .final__section--info--wrapper {
     padding: 120px 0px;
